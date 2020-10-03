@@ -43,11 +43,13 @@ def check_update_required(ip):
 
 
 def save_set_ip(ip):
+    print("save new ip to disk")
     with open('lastIp.txt', 'w') as saveIp:
         saveIp.write(ip)
 
 
 def generate_lua(ip4, ip6):
+    print("update luadns file")
     lua = ""
     if ip4:
       lua += f'a("lexxxel.de", "{ip4}")\n'
@@ -61,6 +63,7 @@ def generate_lua(ip4, ip6):
 
 
 def git_commit(message):
+    print("commit luadns change")
     repo = Repo(".")
     repo.git.add("lexxxel.de.lua")
     repo.index.commit(message)
