@@ -1,2 +1,2 @@
-a("lexxxel.de", "31.16.51.102")
+a("lexxxel.de", "31.16.187.249")
 cname("*.lexxxel.de", "p1rmcfy9s5tbijab.myfritz.net")
