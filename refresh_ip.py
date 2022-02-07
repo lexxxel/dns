@@ -56,7 +56,11 @@ def generate_lua(ip4, ip6):
     if ip6:
       lua += f'aaaa("lexxxel.de", "{ip6}")\n'
 
-    lua += 'cname("*.lexxxel.de", "p1rmcfy9s5tbijab.myfritz.net")\n'
+    lua += 'cname("git.lexxxel.de", "89.58.25.61")\n'
+    #lua += 'cname("*.lexxxel.de", "p1rmcfy9s5tbijab.myfritz.net")\n'
+    # add mx entries
+    lua += 'mx(_a, "mx00.udag.de", 10)\n'
+    lua += 'mx(_a, "mx01.udag.de", 20)\n'
 
     with open("./lexxxel.de.lua", "w") as file:
         file.write(lua)
