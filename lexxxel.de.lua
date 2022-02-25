@@ -6,3 +6,6 @@ mx(_a, "lexxxel.de", 5)
 txt(_a, "v=DKIM1; h=sha256; k=rsa; ", 180)
 txt(_a, "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2epBFWPIc9BtMELPVnX2hPjpZ0AMhRp4aSg+BvywnUV8asVeKsinloYo/QsBz2L1cg4IENz8FSPqwCgxdfvuHNtErO3gZ5UQ7AKi9Mf/mlg197f+w5I3YiRvJDMTOTXO8GX1psLypVwRHYHTptB7JYC4r0j6uvFxA65VQvAc1+2KCP4MBJ1T5NXiRbYPvrau+oAUJwM+qPGnRP", 180)
 txt(_a, "Ko7oBlWssUn6P2i09VF3/Ok4fAjPIfbTL/XIZG9enf+3jOVpmSQRxMuYg6yN6oNbZ6Ytq/zKVhTHvyTj8LiBtRqpjZn50fELdhX4zA93hL22n7+rrwRfNoSQoEARdx5iq1pFAevwIDAQAB", 180)
+txt(_a, "v=spf1 mx ~all", 180)
+txt("_dmarc.lexxxel.de.", "v=DMARC1; p=quarantine; rua=mailto:abuse@lexxxel.de; ruf=mailto:abuse@lexxxel.de; sp=quarantine; ri=86400", 180)
+
