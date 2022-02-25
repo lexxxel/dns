@@ -11,5 +11,5 @@ txt(_a, "Ko7oBlWssUn6P2i09VF3/Ok4fAjPIfbTL/XIZG9enf+3jOVpmSQRxMuYg6yN6oNbZ6Ytq/z
 
 txt(_a, "v=spf1 mx ~all", 180)
 
-txt("_dmarc.lexxxel.de.", "v=DMARC1; p=quarantine; rua=mailto:abuse@lexxxel.de; ruf=mailto:abuse@lexxxel.de; sp=quarantine; ri=86400", 180)
+txt(concat("_dmarc", _a), "v=DMARC1; p=quarantine; rua=mailto:abuse@lexxxel.de; ruf=mailto:abuse@lexxxel.de; sp=quarantine; ri=86400", 180)
 
