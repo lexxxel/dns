@@ -3,7 +3,9 @@ a("*.lexxxel.de", "89.58.25.61")
 aaaa("lexxxel.de", "2a03:4000:62:fd5::1")
 aaaa("*.lexxxel.de", "2a03:4000:62:fd5::1")
 
-mx("lexxxel.de", "mail.lexxxel.de", 5)
+a("mail.lexxxel.de", "89.58.25.61")
+aaaa("mail.lexxxel.de", "2a03:4000:62:fd5::1")
+mx(_a, "mail.lexxxel.de", 5)
 
 txt("mail.lexxel.de", "v=DKIM1; h=sha256; k=rsa; ", 180)
 txt("mail.lexxel.de", "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2epBFWPIc9BtMELPVnX2hPjpZ0AMhRp4aSg+BvywnUV8asVeKsinloYo/QsBz2L1cg4IENz8FSPqwCgxdfvuHNtErO3gZ5UQ7AKi9Mf/mlg197f+w5I3YiRvJDMTOTXO8GX1psLypVwRHYHTptB7JYC4r0j6uvFxA65VQvAc1+2KCP4MBJ1T5NXiRbYPvrau+oAUJwM+qPGnRP", 180)
